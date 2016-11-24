@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     parameters {
-        choiceParam(choices: 'mp\nmde\nebayk', description: 'Tenant?', name: 'tenant')
+        choiceParam(choices: 'mp\nmde\nebayk', name: 'tenant')
     }
 
     stages {
