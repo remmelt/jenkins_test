@@ -4,6 +4,12 @@ pipeline {
     agent any
 
     stages {
+        stage("Checkout") {
+            steps {
+                sh 'echo ok ok ok'
+            }
+        }
+
         stage("Hoei") {
             steps {
                 parallel (
@@ -18,6 +24,14 @@ pipeline {
                         sh 'echo End TWO'
                     }
                 )
+            }
+        }
+
+        stage("Deploy") {
+            steps {
+                sh 'deployen maar!'
+                sleep 5
+                echo 'so done with this'
             }
         }
     }
