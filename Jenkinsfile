@@ -29,7 +29,7 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                sh 'deployen maar!'
+                echo 'deployen maar!'
                 sleep 5
                 echo 'so done with this'
             }
